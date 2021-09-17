@@ -64,6 +64,8 @@ body {
   margin: auto;
   border-radius: 0.9375rem;
   min-width: 21.25rem;
+  max-height: calc(100% - 80px);
+  overflow-y: auto;
 }
 
 .app-dialog .dialog-content .dialog-title {
@@ -108,4 +110,28 @@ body {
   display: flex;
   margin-bottom: 0.5rem;
   align-items: center;
+}
+
+.input{
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.input:focus-visible{
+  border: 1px solid rgb(137, 189, 137)!important;
+}
+
+.question-form{
+  display: flex; 
+  flex-direction: column; 
+  padding: 16px; 
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+}
+.answers{
+  display: flex;
+  flex-direction: column;
 }

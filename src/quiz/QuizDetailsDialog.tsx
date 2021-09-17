@@ -7,6 +7,7 @@ interface QuizDetailsDialogProps {
     quiz: Quiz
 }
 const QuizDetailsDialog = ({open, onClose, quiz}:QuizDetailsDialogProps) => {
+    console.log({quiz})
     return <AppDialog open={open} onClose={onClose} title={quiz.title} >
         {quiz.questions_answers.map(qa => 
             <div key={qa.id} className='question'>

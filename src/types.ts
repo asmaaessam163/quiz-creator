@@ -1,6 +1,12 @@
-interface QuestionsAndAnswers{
+export interface Answer {
+    id: number, 
+    is_true: boolean; 
+    text: string
+}
+
+export interface QuestionsAndAnswers{
     answer_id: number | null,
-    answers: {id: number, is_true: boolean; text: string}[]
+    answers: Answer[]
     feedback_false: string;
     feedback_true: string;
     id: number;
